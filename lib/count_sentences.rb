@@ -14,9 +14,6 @@ class String
     self.end_with?("!")
   end
 
-  delimiters = [',', ' ', "'"]
-word.split(Regexp.union(delimiters))
-
   def count_sentences
     delimiters = ['.', '?', '!']
     self.split(Regexp.union(delimiters))
